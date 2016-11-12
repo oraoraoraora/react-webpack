@@ -1,4 +1,4 @@
-var Router = require("./Router.js");
+var Root = require("./Root.js");
 
 
 import '../scss/style.scss';
@@ -9,8 +9,7 @@ if (__DEV__) {
 }
 Actions.initActions();
 
-
 Store.init(  function() {
-	ReactDOM.render(<Router />, document.getElementById('app-container'));
+	ReactDOM.render(<Root />, document.getElementById('app-container'));
 });
 
